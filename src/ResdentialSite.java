@@ -2,7 +2,7 @@ public class ResdentialSite extends Site {
     public ResdentialSite(double units, double rate) {
         super(units, rate);
     }
-
+    @Override
     public double getBillableAmount() {
         return getBaseAmount() + getTaxAmount();
     }
